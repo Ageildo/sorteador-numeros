@@ -15,7 +15,8 @@ function sortear(){
 }
 
 let resultado = document.getElementById('resultado')
-resultado.textContent = `Números sorteados:${sorteados.join(', ')}`;
+document.getElementById('resultado').innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`;
+alterarStatusBotao();
 }
 
 function obterNumeroAleatorio(min, max) {
